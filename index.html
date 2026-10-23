@@ -655,8 +655,7 @@ async function renderCharts(stage){
   }
   if(CH.source!=="demo") startLive(); paint(stage);
   if(CH.source==="demo"){ note.textContent="Pas de réseau : courbes de démonstration (mode test)."+(stage===4?" Le chef refuse d'en dire plus.":""); return; }
-  const span=CH.source==="binance"?"3 ans":"1 an";
-  note.textContent=`Cours en direct (${CH.source==="binance"?"Binance":"CoinGecko"}), historique sur ${span}. La zone colorée = depuis le jour du cadeau.`
+  note.textContent=`La zone colorée = depuis le jour du cadeau.`
     + (stage===4?" Le chef refuse d'en dire plus.":"");
 }
 
